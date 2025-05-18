@@ -17,7 +17,6 @@ app.get('/',async(req,res)=>{
 });
 
 
-
 app.get('/empcount', async (req, res) => {
     try {
         const result = await pool.query('SELECT COUNT(*) FROM employees');
@@ -27,6 +26,59 @@ app.get('/empcount', async (req, res) => {
     }
 });
 
+app.get('/countryCount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM countries');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
+
+app.get('/deptcount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM departments');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
+
+app.get('/locationcount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM locations');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
+
+app.get('/regioncount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM regions');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
+
+app.get('/jobscount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM jobs');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
+
+app.get('/jobHcount', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT COUNT(*) FROM job_history');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ Error: err.message });
+    }
+});
 
 // app.get('/Q40', async (req, res) => {
 //     try {
