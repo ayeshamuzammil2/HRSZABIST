@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dashboard Counts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .count-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007bff;
+            margin: 10px 0 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .col-4 {
+            flex: 1 1 28%;
+            min-width: 220px;
+            background: #e9ecef;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-4">
+                <h2>Employees Count</h2>
+                <p id="emp" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Country Count</h2>
+                <p id="country" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Departments Count</h2>
+                <p id="departments" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Regions Count</h2>
+                <p id="regions" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Jobs Count</h2>
+                <p id="jobs" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Locations Count</h2>
+                <p id="locations" class="count-value">---</p>
+            </div>
+
+            <div class="col-4">
+                <h2>Job History Count</h2>
+                <p id="jobhistory" class="count-value">---</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/report.js"></script>
+
+</body>
+
+</html>
